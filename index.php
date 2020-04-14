@@ -34,7 +34,7 @@ $yournumber = rand(MIN_NUMBER, MAX_NUMBER);
 }
 ?>
 
-<p> Gratulujeme, uhádl jsi číslo <?= $guessnumber ?> svým hádaným číslem <?= $yournumber ?>
+<p> Gratulujeme, uhádl jsi číslo <?= $guessnumber ?> tvým hádaným číslem <?= $yournumber ?>
 
 </body>
 </html>
