@@ -26,10 +26,13 @@ if ($guessnumber == $yournumber) {
 }
 */
 
-while ($guessnumber != $yournumber) {
-    Hádané číslo <?= $yournumber ?> není správné. Zkus jiné
-}
+while ($guessnumber != $yournumber) { ?>
+    <p> Hádané číslo <?= $yournumber ?> není správné. Zkus jiné </p>
+
+<?php   
 $yournumber = rand(MIN_NUMBER, MAX_NUMBER);
+}
+?>
 
 <p> Gratulujeme, uhádl jsi číslo <?= $guessnumber ?> svým hádaným číslem <?= $yournumber ?>
 
