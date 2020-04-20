@@ -19,15 +19,12 @@ define ('MIN_NUMBER', 0);
 <?php
 
 while ($guessnumber != $yournumber) { ?>
- <?php
- if ($guessnumber >= $yournumber) { ?> 
-     <p> Tvoje číslo je větší než hádané číslo. <p>
-  <?php}
- else { ?>
-   <p> Tvoje číslo je mensi než hádané číslo. <p>
-  <?php}  
- 
- <?php   
+
+<?php
+if ($yournumber >= $guessnumber) { ?>
+ Tvoje číslo je větší 
+
+<?php   
 $yournumber = rand(MIN_NUMBER, MAX_NUMBER);
 }
 ?>
