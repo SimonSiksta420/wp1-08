@@ -24,7 +24,7 @@ while ($guessnumber != $yournumber) { ?>
 if ($yournumber >= $guessnumber) { ?>
  Tvoje číslo je větší 
 
-<?php   
+<?php }  
 $yournumber = rand(MIN_NUMBER, MAX_NUMBER);
 }
 ?>
