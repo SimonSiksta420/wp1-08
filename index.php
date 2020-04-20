@@ -1,8 +1,8 @@
 <?php
-$guessnumber = 55;
 $yournumber = 0;
 define ('MAX_NUMBER', 100);
 define ('MIN_NUMBER', 0);
+$guessnumber = rand (MIN_NUMBER, MAX_NUMBER);
 ?>
 <!DOCTYPE html>
 <html lang="cs">
