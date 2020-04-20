@@ -21,9 +21,9 @@ define ('MIN_NUMBER', 0);
 while ($guessnumber != $yournumber) { ?>
  <?php
  if ($guessnumber >= $yournumber) {
-     Tvoje číslo je větší než hádané číslo.
+     "Tvoje číslo je větší než hádané číslo."
  } else {
-     Tvoje číslo je menší než hádané číslo.
+     "Tvoje číslo je menší než hádané číslo."
  }
 ?> 
 
