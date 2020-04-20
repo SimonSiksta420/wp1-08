@@ -19,12 +19,17 @@ define ('MIN_NUMBER', 0);
 <?php
 
 while ($guessnumber != $yournumber) { ?>
-
+    <p> Hádané číslo <?= $yournumber ?> není správné. Zkus jiné </p>
 <?php
-if ($yournumber >= $guessnumber) { ?>
- Tvoje číslo je větší 
+if ($guessnumber >= $yournumber) { ?>
+    Tvoje číslo je větší.
 
-<?php }  
+<?php }
+
+ else { ?>
+    Tvoje číslo je menší.
+
+ <?php }  
 $yournumber = rand(MIN_NUMBER, MAX_NUMBER);
 }
 ?>
