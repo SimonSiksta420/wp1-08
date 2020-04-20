@@ -22,12 +22,12 @@ while ($guessnumber != $yournumber) { ?>
     <p> Hádané číslo <?= $yournumber ?> není správné. Zkus jiné </p>
 <?php
 if ($guessnumber >= $yournumber) { ?>
-    Tvoje číslo je menší.
+    Tvoje číslo je větší než hádané číslo.
 
 <?php }
 
  else { ?>
-    Tvoje číslo je větší.
+    Tvoje číslo je menší než hádané číslo.
 
  <?php }  
 $yournumber = rand(MIN_NUMBER, MAX_NUMBER);
